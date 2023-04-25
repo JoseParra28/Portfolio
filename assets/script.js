@@ -19,13 +19,13 @@ function parallax(e){
     });
 }
 
-ScrollReveal({ 
-    reset: true,
-    distance: '60px',
-    duration: 2500,
-    delay: 400
- });
- ScrollReveal().reveal('.content', { delay: 500 });
+// ScrollReveal({ 
+//     reset: true,
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 400
+//  });
+//  ScrollReveal().reveal('.content', { delay: 500 });
 
 //  * typing text *//
 
