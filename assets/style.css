@@ -147,37 +147,60 @@ body.active {
   left: 46%;
 
 }
-.landing-hero img{
-  width: 15%;
-  height: 15%;
+.landing-hero{
+  width: 50%;
+  height: 0.5px; 
   overflow: hidden;
   position: absolute;
   top: 50%;
   right: 70%;
+  background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 }
-.landing-hero-2 img{
-  width: 15%;
-  height: 15%;
+.landing-hero-2 {
+  width: 30%;
+  height: 0.5px; 
   overflow: hidden;
   position: absolute;
   top: 30%;
-  right: 30%;
+  right: -4%;
+  background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 }
-.landing-hero-3 img{
-  width: 15%;
-  height: 15%;
+.landing-hero-3 {
+  width: 50%;
+  height: 0.5px; 
   overflow: hidden;
   position: absolute;
   top: 70%;
-  right: 20%;
+  right: -3%;
+   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 }
-.landing-hero-4 img{
-  width: 15%;
-  height: 15%;
+.landing-hero-4 {
+  width: 45%;
+  height: 0.5px; 
   overflow: hidden;
   position: absolute;
-  top: 10%;
-  left: 20%;
+  top: 15%;
+   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
+}
+.landing-hero-5 {
+  width: 45%;
+  height: 0.4px;
+  rotate: 90deg;
+  overflow: hidden;
+  position: absolute;
+  top: 15%;
+   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
+}
+.landing-hero-6 {
+  width: 50%;
+  height: 0.5px; 
+  rotate: 90deg;
+  overflow: hidden;
+  position: absolute;
+  top: 70%;
+  right: -3%;
+   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
+
 }
 .container .text-1{
   position: relative;
@@ -320,7 +343,7 @@ section {
   padding: 3%;
   position: absolute;
   display: flex;
-  left: 15%;
+  left: 7%;
   top: 20%;
   margin-right: 5%;
 
