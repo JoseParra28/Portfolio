@@ -2,21 +2,11 @@
 .project-1-img {
     display: flex;
     justify-content: center;
-    margin-top: 9%;
+    box-sizing: border-box;
+    
 }
 .project-1-img img {
     position: relative;
-    height: 40%;
-    width: 40%;
-}
-.containers  {
-    background-color: burlywood;
-    width: 50%;
-
-}
-.containers img {
-    width: 50%;
-}
-.circle img {
-    width: 10%;
+    width: 30%;
+    overflow: hidden;
 }

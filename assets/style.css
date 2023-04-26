@@ -462,16 +462,20 @@ section {
 }
 .footer-divs ul {
   position: relative;
-  top: 23%;
+  top: 16%;
 }
 .footer-divs li a {
   list-style: none;
   padding: 4px;
-  font-size: 1.5rem; 
+  font-size: 1rem; 
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(80, 79, 79);
   margin: 2%;
+}
+.foot-links li {
+  padding: 2%;
+  
 }
 .footer-divs li{
   list-style: none; 
@@ -481,19 +485,16 @@ section {
   padding: 4px;
   font-size: 1.5rem;
 }
-.foot-social ul {
-display: grid;
-}
 .social-icons
 {
   padding-left:0;
   margin-bottom:0;
   list-style:none
 }
-.social-icons li
-{
+.social-icons li {
   display:inline-block;
-  margin-bottom:4px
+  margin-bottom:4px;
+  font-size: 2rem;
 }
 .social-icons li.title
 {
@@ -506,7 +507,6 @@ display: grid;
 .social-icons a{
   background-color:#eceeef;
   color:#818a91;
-  font-size:16px;
   display:inline-block;
   line-height:44px;
   width:44px;
