@@ -3,10 +3,81 @@
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    position: relative;
+    top: 15%;
     
 }
 .project-1-img img {
     position: relative;
-    width: 30%;
+    width: 55%;
     overflow: hidden;
 }
+.project-container {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.project-info{
+    margin-top: 10%;
+    width: 50%;
+}
+.project-info h2, p{
+    margin: 3%;
+}
+/* ----------------------------strategy plane */
+.strategy-container{
+    height: 40%;
+    width: 60%;
+    padding: 3%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    margin-right: 5%;
+    display: flex;
+   }
+   .strategy-container-2{
+    height: 40%;
+    width: 60%;
+    padding: 3%;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    margin-right: 5%;
+    display: flex;
+   }
+   .strategy img {
+    width: 35%;
+    height: 55%;
+    overflow: hidden;
+    margin-left: 8%;
+   }
+   .goals p {
+    margin: 5%;
+    font-weight: 100;
+   }
+   .goal h2 {
+    margin-left: 45%;
+   }
+   
+.num {
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    padding: 3%;
+    border-radius: 50%;
+}
+/* -------------------------------project info */
+.project-journey {
+    margin-top: 5%;
+    width: 50%;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+

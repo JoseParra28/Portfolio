@@ -145,6 +145,7 @@ body.active {
   overflow: hidden;
   position: absolute;
   left: 46%;
+  border-radius: 5%;
 
 }
 .landing-hero{
@@ -306,6 +307,7 @@ section {
   height: 55%;
   overflow: hidden;
   margin-left: 15%;
+  border-radius: 5%;
  }
  .skills-header{
   height: 40%;
@@ -354,6 +356,7 @@ section {
   overflow: hidden;
   position: relative;
   right: -55%;
+  border-radius: 5%;
  }
  .line {
   border-left: 2px solid #ce9039;
@@ -388,6 +391,7 @@ section {
   height: 55%;
   overflow: hidden;
   margin-left: 4%;
+  border-radius: 5%;
  }
  .folio-header{
   height: 40%;
@@ -419,6 +423,7 @@ section {
   margin-left: 4%;
   position: relative;
   left: 48%;
+  border-radius: 5%;
  }
  .folio-header-2{
   height: 40%;
