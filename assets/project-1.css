@@ -71,6 +71,11 @@
     border-radius: 50%;
 }
 /* -------------------------------project info */
+.wireframes h2 {
+    margin-left: 43%;
+    margin-bottom: 5%;
+
+}
 .project-journey {
     margin-top: 5%;
     width: 50%;

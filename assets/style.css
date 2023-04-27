@@ -16,8 +16,9 @@ h1, h2, h3 {
   font-weight: 100;
 }
 p {
-  color: #444;
+  color: rgb(113, 106, 106);;
   font-weight: 200;
+  letter-spacing: 2px;
 }
 button {
   border-radius: 20px;
@@ -27,6 +28,7 @@ button {
   font-family: Lato, sans-serif;
   font-size: 1rem;
   padding: 1%;
+  margin-top: 2%;
   text-transform: capitalize;
   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
   -webkit-background-clip: text;
@@ -56,6 +58,10 @@ body.active {
 #paRra.active {
   color:rgb(198, 193, 193);
 }
+#texT.active {
+  color:rgb(198, 193, 193);
+}
+
 /* --------------------------------nav */
 .navbar {
   position: fixed;
@@ -80,7 +86,7 @@ body.active {
   margin-top:2px ;
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgb(80, 79, 79);
+  color: rgb(113, 106, 106);
 }
 .nav-items ul li a:hover {
   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
@@ -204,7 +210,7 @@ body.active {
    background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 
 }
-.container .text-1{
+.container #texT{
   position: relative;
   color: rgb(80, 79, 79);
   font-size: 3rem;
@@ -220,29 +226,6 @@ body.active {
   font-size: 3rem;
   font-weight: 600;
 }
-.container .text-2.active{
-  background-color: #191818;
-}
-.container .text-2::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(230, 20, 20);
-  border-left: 2px solid rgb(240 238 238);
-  animation: animate 4s steps(12) infinite;
-}
-@keyframes animate {
-  40%, 60% {
-    left: calc(100%);
-  }
-  100%{
-    left: 100%;
-  }
-}
-
 /* -----------------------------------------------------typing text 2 */
 .container {
   height: 100vh;
@@ -250,6 +233,7 @@ body.active {
   justify-content: center;
   align-items: center;
 }
+
 .container p {
   font-size: 3rem;
   padding: 0.5rem;
@@ -278,6 +262,24 @@ body.active {
   50% { background-color: transparent; }
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
+}
+@media screen and (max-width:550px) {
+  .container {
+    display: flow-root;
+    top: 29%;
+    position: absolute;
+  }
+  .container #texT {
+    font-size: 2rem;
+  }
+  .container  {
+    display: contents;
+  }
+  .container p {
+    font-size: 2rem;
+  }
+  
+
 }
 
 /* ---------------------------------- about */
@@ -324,9 +326,17 @@ section {
   right: 20%;
   top: 27%;
   position: absolute;
-  backdrop-filter: blur(20px);
   max-width: 400px;
   padding: 40px;
+}
+@media screen and (max-width:550px) {
+ 
+  .content .text-box {
+    width: 100%;
+    right: -2%;
+    top: 75%;
+  }
+  
 }
 /* ----------------------------skills section */
 .scroll-container {
