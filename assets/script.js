@@ -1,23 +1,17 @@
 
-// let spanTexts = document.getElementsByTagName("span");
-// window.onload = function(){
-//     for(spanText of spanTexts){
-//         spanText.classList.add("active");
-//     }a
+
+// document.addEventListener("mousemove", parallax);
+
+// function parallax(e){
+//     this.querySelectorAll('.layer').forEach(Layer => {
+//         const speed = Layer.getAttribute('data-speed')
+
+//         const  x = (window.innerWidth - e.pageX*speed)/100
+//         const  y = (window.innerWidth - e.pageY*speed)/100
+
+//         Layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+//     });
 // }
-// -------------------------------------------------------------
-document.addEventListener("mousemove", parallax);
-
-function parallax(e){
-    this.querySelectorAll('.layer').forEach(Layer => {
-        const speed = Layer.getAttribute('data-speed')
-
-        const  x = (window.innerWidth - e.pageX*speed)/100
-        const  y = (window.innerWidth - e.pageY*speed)/100
-
-        Layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-    });
-}
 
 ScrollReveal({ 
     reset: true,
@@ -68,15 +62,3 @@ container.addEventListener('wheel', (e)=>{
     scrollLine.style.width = container.scrollLeft + 'px';
 })
 
-// const card = document.querySelector('.card');
-// const containers = document.querySelector('.containers');
-
-// ---------------moving div
-
-// containers.addEventListener("mousemove", (e) => {
-//     console.log("hashs")
-//     let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-//     let yAxis = (window.innerWidth / 2 - e.pageY) / 25;
-    
-//     card.style.transform = `rotateY(${yAxis}deg), rotateX(${xAxis}deg)`;
-// });
