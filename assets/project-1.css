@@ -9,8 +9,9 @@
 }
 .project-1-img img {
     position: relative;
-    width: 55%;
+    width: 30%;
     overflow: hidden;
+    margin-top: 6%;
 }
 .project-container {
     height: 45%;
@@ -24,6 +25,23 @@
 }
 .project-info h2, p{
     margin: 3%;
+}
+@media screen and (max-width:550px) {
+    .project-1-img img {
+        margin-top: 20%;
+    }
+    .project-info {
+        margin-top: 0%;
+        padding: 5%;
+        width: 100%;
+    }
+    .project-container {
+        display: block;
+        margin-top: 30%;
+      
+    }
+ 
+  
 }
 /* ----------------------------strategy plane */
 .strategy-container{
@@ -70,6 +88,19 @@
     padding: 3%;
     border-radius: 50%;
 }
+@media screen and (max-width:550px) {
+    .goal h2 {
+        margin-left: 30%;
+    }
+    .strategy-container {
+        width: 90%;
+        top: 35%;
+    }
+    .strategy-container-2 {
+        width: 90%;
+        top: 63%;
+    }
+}
 /* -------------------------------project info */
 .wireframes h2 {
     margin-left: 43%;
@@ -78,9 +109,21 @@
 }
 .project-journey {
     margin-top: 5%;
-    width: 50%;
+    width: 90%;
+    font-size: 4rem;
 }
 .buttons {
     display: flex;
     justify-content: space-evenly;
+}
+@media screen and (max-width:550px) {
+    .wireframes h2 {
+        margin-left: 23%;
+        margin-bottom: 1%;
+    }
+    .project-journey {
+        margin: 3%;
+        width: 94%;
+
+    }
 }

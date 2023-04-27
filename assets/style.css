@@ -19,6 +19,13 @@ p {
   color: rgb(113, 106, 106);;
   font-weight: 200;
   letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+@media screen and (max-width:550px) {
+  p {
+    font-size: 0.9rem;
+  }
+
 }
 button {
   border-radius: 20px;
@@ -283,9 +290,9 @@ body.active {
 }
 
 /* ---------------------------------- about */
-section {
+.section {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   position: relative;
  
@@ -362,9 +369,9 @@ section {
   width: 50%;
   padding: 3%;
   position: absolute;
-  right: 0%;
+  left: 0%;
   top: 20%;
-  margin-right: 5%;
+  margin-left: 5%;
  }
  .skills-header h2 {
   margin-bottom: 2%;
@@ -380,13 +387,16 @@ section {
   height: 100%;
   overflow: hidden;
  }
- /* ----------------------languges */
- .container-3 {
-  width: 100%;
-  height: 98vh;
-  overflow: hidden;
-  position: relative;
-}
+ @media screen and (max-width:550px) {
+  .skills-header {
+    width: 100%;
+    top: 69%;
+  }
+  .container-2 {
+    height: 68vh;
+  }
+ }
+
 
 /* ---------------------------------- */
 :root {
@@ -409,9 +419,7 @@ section {
   border-radius: 3px;
   left: 50%;
 }
-.skills-card {
-  width: 22%;
-}
+
 .cover-image {
   width: 100%;
   height: 100%;
@@ -423,6 +431,11 @@ section {
   position: absolute;
   width: 100%;
   z-index: -1;
+}
+.wrapper img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .card:hover .wrapper {
@@ -593,8 +606,20 @@ section {
     font-size: 1rem;
   }
 
+  @media screen and (max-width:550px) {
+    .card {
+      left: -6%;
+    }
+  }
 
- /* ---------------------------------------------------------- */
+ /* ---------------------------------------------------------language section- */
+
+  .container-3 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
 .language-header {
   height: 40%;
   width: 50%;
@@ -628,6 +653,15 @@ section {
   padding: 3%;
   color: rgb(113, 106, 106);
 
+ }
+ @media screen and (max-width:550px)  {
+  .language-header {
+    top: 68%;
+    left: 0%;
+  }
+  .line{
+    margin-left: 18px;
+  }
  }
  /* ------------------------------------------------------------portfolio */
  /* ------------------------------------------first project */
@@ -665,6 +699,14 @@ section {
  .folio-header p {
   margin-right: 25%;
  }
+ @media screen and (max-width:550px) {
+  .folio-header {
+    left: 0%;
+    top: 40%;
+    width: 100%;
+  }
+
+ }
  /* -------------------------secont project */
  .container-4 {
   width: 100%;
@@ -696,7 +738,13 @@ section {
  .folio-header-2 p {
   margin-right: 25%;
  }
-
+ @media screen and (max-width:550px) {
+  .folio-header-2 {
+    left: 10%;
+    top: 30%;
+    width: 100%;
+  }
+ }
 
 
  /* ----------------------------------------------form */
@@ -814,6 +862,18 @@ section {
     display:block;
     margin-right:0;
     font-weight:600
+  }
+}
+@media screen and (max-width:550px){
+  .footer-wrap {
+    display: block;
+    height: 38vh;
+  }
+  .footer-divs {
+    width: 100%;
+  }
+  .foot-links li a {
+    font-size: 0.7rem;
   }
 }
 

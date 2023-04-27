@@ -24,9 +24,9 @@
                       <div id="toggle">
                         <i class="indicator"></i>
                       </div>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">skills</a></li>
-                        <li><a href="/">portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#folio">portfolio</a></li>
                         <li class="contact"><a href="/">contact</a></li>
                     </ul>
               </div>      
@@ -43,7 +43,7 @@
 <div class="landing-hero-6 layer"  data-speed="-10"></div>
 <!-- -----------------------------logo -->
 <div class="logo">
-  <img src="assets/images/glasses.png" alt="logo">
+  <a><img src="assets/images/glasses.png" alt="logo"></a></img>
 </div>
 <div class="landing">
  
@@ -55,7 +55,7 @@
 </div>
 </div>
 <!-- ------------------about section -->
-<section>
+<section id="about" class="section">
   <div class="sec-01">
     <div class="container-1">
       <h2 class="main-tittle">{% About %}</h2>
@@ -75,7 +75,7 @@
   </div>
 </section>
 <!-- --------------------------skills section -->
-
+<section id="skills">
   <div class="container-2">
     <div class="skills-card">
     <div class="card">
@@ -96,6 +96,7 @@
         I am eager to hain entry into the tech </p>
     </div>
   </div>
+</section>
 <!-- ----------------------------------skills hero img -->
 <div class="skills-image-2">
   <img src="assets/images/phones.png" alt="phone image">
@@ -134,7 +135,7 @@
  
   </div>
 </div>
-
+<section id="folio">
 <div class="container-5">
   <h1 class="folio-h1">${Projects}</h1>
   <div class="folio-image content">
@@ -162,6 +163,7 @@
       <button><a href="/">View project</a></button>
   </div>
 </div>
+</section>
 <!-- --------------------------footer -->
 
 <footer>
