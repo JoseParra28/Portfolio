@@ -393,7 +393,7 @@ body.active {
   object-fit: cover;
   border-radius: 3%;
 }
-.content .text-box {
+ .text-box {
   z-index: 222;
   width: 100%;
   top: 100%;
@@ -402,9 +402,10 @@ body.active {
 }
 @media screen and (max-width:550px) {
  
-  .content .text-box {
+  .text-box {
     width: 100%;
-    right: -2%;
+   padding: 10px;
+   padding-top: 15%;
     top: 75%;
   }
   
