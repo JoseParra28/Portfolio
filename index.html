@@ -17,22 +17,26 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <nav>
-              <div class="nav-items">
-                    <ul >
-                      <div id="toggle">
-                        <i class="indicator"></i>
-                      </div>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#folio">portfolio</a></li>
-                        <li class="contact"><a href="#contact">contact</a></li>
-                    </ul>
-              </div>      
-            </nav>
+      <div class="navbar-area">
+        <div class="nav-container">
+          <nav class="site-navbar">
+            <a href="index.html" class="site-logo"><img src="/assets/images/glasses.png" alt="image" class="logo-img" style="width: 60px; height: 60%;"></a>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#folio">portfolio</a></li>
+              <li class="contact"><a href="#contact">contact</a></li>
+                  <div id="toggle">
+                    <i class="indicator"></i>
+                  </div>
+            </ul>
+            <!-- nav-toggler for mobile version only -->
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
         </div>
-        
+      </div>    
 </header>
 <!-- -------------------------landing section -->
 <div class="landing-hero layer"  data-speed="-10" ></div>
@@ -42,13 +46,14 @@
 <div class="landing-hero-5 layer"  data-speed="-10"></div>
 <div class="landing-hero-6 layer"  data-speed="-10"></div>
 <!-- -----------------------------logo -->
-<div class="logo">
+<!-- <div class="logo">
   <a><img src="assets/images/glasses.png" alt="logo"></a></img>
+</div> -->
+<div class="container-1">
+  <span id="texT">Jose Parra</span>
+  <h4>Creative frontend developer</h4>
 </div>
 <div class="landing">
- 
-<div class="container">
-  <span id="texT">Jose Parra</span>
   <div class="container">
     <p><span class="typed-text text-2"></span><span class="cursor">&nbsp;</span></p>
   </div>
@@ -79,7 +84,7 @@
                   the goal of improvement through innovation.</p>
         </div>
       </div>
-    </div>
+   
   </div>
 </section>
 <!-- ----------------------------education section -->
@@ -119,11 +124,11 @@
   </div>
     <div class="skills-header">
       <h2>Skills{}</h2>
-      <p id="pArra"> • Languages : HTML, CSS, JS, Python
-        • Databases : MySQL, PostgreSQL
-        • Libraries : jQuery, ThreeJS
-        • Version control : Heroku, GitHub, Git
-        • Frameworks : Flask, Django, Bootstrap </p>
+      <p id="pArra">Languages : HTML, CSS, JS, Python  </p>
+      <p id="pArra">Databases : MySQL, PostgreSQL  </p>
+      <p id="pArra">Libraries : jQuery, ThreeJS  </p>
+      <p id="pArra">Version control : Heroku, GitHub, Git  </p>
+      <p id="pArra">Frameworks : Flask, Django, Bootstrap  </p>
     </div>
   </div>
 </section>
@@ -174,9 +179,8 @@
   </div>
   <div class="folio-header">
     <h2>Runway models</h2>
-    <p id="parraA"> years of experience in sales and hospitality. I don’t have much experience in software development 
-      but I am a valuable team-player with strong communication skills and effective problem solving ability. 
-      I am eager to hain entry into the tech </p> 
+    <p id="parraA"> My first website ever! This is a fictional modelling agency created using onlu HTML and CSS. 
+      This website was my first project for <strong>Code institute Dublin</strong> </p> 
       <button><a href="project-1.html">View project</a></button>
   </div>
 </div>
@@ -187,11 +191,10 @@
   </div>
   <div class="folio-header-2">
     <h2>Cake! The quiz game</h2>
-    <p id="paRra"> years of experience in sales and hospitality. I don’t have much experience in software development 
-      but I am a valuable team-player with strong communication skills and effective problem solving ability. 
-      I am eager to hain entry into the tech </p> 
-      <!-- <button><a href="https://joseparra28.github.io/runway-models-final-project/">View project</a></button> -->
-      <button><a href="/">View project</a></button>
+    <p id="paRra">A easy quiz game using HTML, CSS, and Javascript 
+      This game was my second project for <strong>Code institute Dublin</strong>  </p> 
+      <button><a href="project-2.html">View project</a></button>
+
   </div>
 </div>
 </section>
@@ -210,15 +213,8 @@
         Adress: Dubklin, Ireland
       </p>
     </div>
-    <div class="footer-divs foot-links">
-      <ul>
-        <li><a href="/">About</a></li>
-        <li><a href="/">skills</a></li>
-        <li><a href="/">portfolio</a></li>
-        <li><a href="/">contact</a></li>
-      </ul>
-    </div>
     <div class="footer-divs foot-social">
+      <h3>social media</h3>
         <ul class="social-icons">
           <li><a class="facebook" href="https://www.instagram.com/liftandcook_/?hl=en"><i class="fa fa-instagram"></i></a></li>
           <li><a class="twitter" href="https://github.com/JoseParra28"><i class="fa fa-github"></i></a></li>

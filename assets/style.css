@@ -16,7 +16,7 @@ h1, h2, h3 {
   font-weight: 100;
 }
 p {
-  color: rgb(113, 106, 106);;
+  color: rgb(113, 106, 106);
   font-weight: 200;
   letter-spacing: 2px;
   font-size: 1.4rem;
@@ -69,49 +69,108 @@ body.active {
   color:rgb(198, 193, 193);
 }
 
-/* --------------------------------nav */
-.navbar {
-  position: fixed;
-  width: 100%;
-  height: 39px;
-  z-index: 222;
-}
-.nav-items ul {
-  min-height: 20px;
+/* --------------------------------navbar */
+
+.site-navbar {
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
-  padding-top: 10px;
+  align-items: center;
+  padding-top: 1%;
 }
-.nav-items ul li {
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  padding: 4px;
+  display: flex;
 }
-.nav-items ul li a {
+.site-navbar ul li a {
+  color: rgb(113, 106, 106);
+  font-size: 0.9rem;
+  padding: 20px;
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top:2px ;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: rgb(113, 106, 106);
 }
-.nav-items ul li a:hover {
+.site-navbar ul li a:hover {
   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color:transparent;
 }
-.contact   {
-  background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
-  padding: 4px;
-  border-radius: 17px;
-}
+  .nav-toggler {
+      height: 39px;
+      display: none;
+    }
+    .nav-toggler span, 
+    .nav-toggler span:before, 
+    .nav-toggler span:after {
+      width: 28px;
+      height: 3px;
+      background-color: #424040;
+      display: block;
+      transition: .3s;
+    }
+    .nav-toggler span:before {
+      content: '';
+      transform: translateY(-9px);
+    }
+    .nav-toggler span:after {
+      content: '';
+      transform: translateY(6px);
+    }
+    .nav-toggler.toggler-open span {
+      background-color: var(--toggle-background);
+    }
+    .nav-toggler.toggler-open span:before {
+      transform: translateY(0px) rotate(45deg);
+    }
+    .nav-toggler.toggler-open span:after {
+      transform: translateY(-3px) rotate(-45deg);
+    } 
+    /* mobile breakpoint start */
+    @media screen and (max-width: 967px) {
+      .nav-toggler{
+        display: block;
+      }
+      .site-navbar {
+        min-height: 60px;
+      }
+      .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        z-index: 222;
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+      }
+      .site-navbar ul li {
+        width: 100%;
+        text-align: center;
+      }
+      .site-navbar ul li a {
+        padding: 25px;
+        color: #c8cace;
+      }
+      .site-navbar ul.open {
+        max-height: 100vh;
+        overflow: visible;
+      }
+    }
+
+
 /* ------------------------toggle */
 #toggle {
   position: absolute;
-  left: 3%;
+  right: 5%;
   display: block;
+  margin-top: 1%;
   width: 76px;
   height: 25px;
   border-radius: 160px;
@@ -147,8 +206,7 @@ body.active {
 }
 
 .landing{
-  min-height: 100vh;
-  display: flex;
+  height: 50vh;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -167,8 +225,9 @@ body.active {
   height: 0.5px; 
   overflow: hidden;
   position: absolute;
-  top: 50%;
-  right: 70%;
+  rotate: 304deg;
+  top: 77%;
+  left: -18%;
   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 }
 .landing-hero-2 {
@@ -177,16 +236,17 @@ body.active {
   overflow: hidden;
   position: absolute;
   top: 30%;
-  right: -4%;
+  right: 10%;
   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 }
 .landing-hero-3 {
   width: 50%;
   height: 0.5px; 
   overflow: hidden;
+  rotate: 20deg;
   position: absolute;
   top: 70%;
-  right: -3%;
+  right: 10%;
    background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 }
 .landing-hero-4 {
@@ -213,15 +273,20 @@ body.active {
   overflow: hidden;
   position: absolute;
   top: 70%;
-  right: -3%;
+  right: 20%;
    background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
 
 }
-.container #texT{
+.container-1 #texT {
   position: relative;
   color: rgb(80, 79, 79);
   font-size: 3rem;
   font-weight: 600;
+  padding-top: 16%;
+}
+.container-1 h4 {
+  color: rgb(80, 79, 79);
+  font-size: 2rem;
 }
 .container .text-2{
   background-image: linear-gradient(45deg, #87652b 0%, #ce9039 0%, #8f8626 21%, #d9bd2f 52%, #b9bc37 78%, #a39f2c 100%);
@@ -233,9 +298,15 @@ body.active {
   font-size: 3rem;
   font-weight: 600;
 }
+@media screen and (max-width:550px) {
+  .container-1 #texT {
+    padding-top: 60%;
+  }
+
+}
 /* -----------------------------------------------------typing text 2 */
 .container {
-  height: 100vh;
+  height: 18vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,10 +319,6 @@ body.active {
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
-}
-.container p span.typed-text {
-  font-weight: normal;
-  color: #dd7732;
 }
 .container p span.cursor {
   display: inline-block;
@@ -363,6 +430,7 @@ width: 100%;
   border-radius: 50%;
   position: relative;
   background-repeat: no-repeat;
+  padding: 1%;
 }
 @media screen and (max-width:550px) {
   .education-container  {
@@ -787,6 +855,7 @@ width: 100%;
 .footer-divs h3  {
   position: relative;
   top: 20%;
+  font-size: 1.5rem;
 }
 .footer-divs p {
   position: relative;
@@ -796,7 +865,7 @@ width: 100%;
 }
 .footer-divs ul {
   position: relative;
-  top: 16%;
+  top: 22%;
 }
 .footer-divs li a {
   list-style: none;

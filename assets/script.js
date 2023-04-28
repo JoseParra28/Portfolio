@@ -1,22 +1,47 @@
+// ------------------------------------------------------------------toggle
+const navToggler = document.querySelector('.nav-toggler');
+const navMenu = document.querySelector('.site-navbar ul');
+const navLinks = document.querySelectorAll('.site-navbar a');
 
 
-// document.addEventListener("mousemove", parallax);
+allEventListners();
 
-// function parallax(e){
-//     this.querySelectorAll('.layer').forEach(Layer => {
-//         const speed = Layer.getAttribute('data-speed')
 
-//         const  x = (window.innerWidth - e.pageX*speed)/100
-//         const  y = (window.innerWidth - e.pageY*speed)/100
+function allEventListners() {
+  navToggler.addEventListener('click', togglerClick);
+  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+}
 
-//         Layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-//     });
-// }
 
+function togglerClick() {
+  navToggler.classList.toggle('toggler-open');
+  navMenu.classList.toggle('open');
+}
+
+
+function navLinkClick() {
+  if(navMenu.classList.contains('open')) {
+    navToggler.click();
+  }
+}
+// ------------------------------------------------------------------parallax hover
+document.addEventListener("mousemove", parallax);
+
+function parallax(e){
+    this.querySelectorAll('.layer').forEach(Layer => {
+        const speed = Layer.getAttribute('data-speed')
+
+        const  x = (window.innerWidth - e.pageX*speed)/100
+        const  y = (window.innerWidth - e.pageY*speed)/100
+
+        Layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+    });
+}
+// ------------------------------------------------------------------ reveal on scroll
 ScrollReveal({ 
     reset: true,
     distance: '60px',
-    duration: 2500,
+    duration: 2100,
     delay: 400
  });
  ScrollReveal().reveal('.content', { delay: 500 });
@@ -24,7 +49,7 @@ ScrollReveal({
 //  * typing text *//
 
  const body = document.querySelector('body');
-//  const textTransform = document.getElementById('text-2');
+
 
  const toggle = document.getElementById('toggle');
  toggle.onclick = function(){
@@ -38,11 +63,7 @@ ScrollReveal({
     paRra.classList.toggle('active');
  }
 
-// const text = document.querySelector(".text-2");
-
-// textLoad();
-// setInterval(textLoad, 12000);
-// ---------------------------------------------------typing text
+// -----------------------------------------------------------------typing text
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
