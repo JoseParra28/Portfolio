@@ -53,6 +53,7 @@ body {
 body.active {
   background-color: rgb(15, 14, 14);
 }
+
 #parra.active {
   color: rgb(198, 193, 193);
 }

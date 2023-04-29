@@ -46,22 +46,8 @@ ScrollReveal({
  });
  ScrollReveal().reveal('.content', { delay: 500 });
 
-//  * typing text *//
-
- const body = document.querySelector('body');
 
 
- const toggle = document.getElementById('toggle');
- toggle.onclick = function(){
-    body.classList.toggle('active');
-    toggle.classList.toggle('active'); 
-    text.classList.toggle('active'); 
-    textT.classList.toggle('active'); 
-    parra.classList.toggle('active');
-    parraA.classList.toggle('active');
-    pArra.classList.toggle('active');
-    paRra.classList.toggle('active');
- }
 
 // -----------------------------------------------------------------typing text
 
