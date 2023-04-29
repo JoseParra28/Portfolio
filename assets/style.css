@@ -170,9 +170,8 @@ body.active {
 /* ------------------------toggle */
 #toggle {
   position: absolute;
-  right: 5%;
+  left: 6%;
   display: block;
-  margin-top: 1%;
   width: 76px;
   height: 25px;
   border-radius: 160px;
@@ -184,6 +183,11 @@ body.active {
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
               inset 0 8px 8px rgba(0, 0, 0, 0.1),
               inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 967px) {
+  #toggle {
+    left: 20%;
+  }
 }
 #toggle.active {
   background-color: rgb(163, 160, 160);
@@ -473,7 +477,7 @@ padding-bottom: 2%;
   padding: 3%;
   position: absolute;
   left: 0%;
-  top: 20%;
+  top: 10%;
   margin-left: 5%;
  }
  .skills-header h2 {
