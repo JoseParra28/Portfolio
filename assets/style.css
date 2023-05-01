@@ -863,8 +863,6 @@ padding-bottom: 2%;
   }
  }
 
-
- /* ----------------------------------------------form */
 /* --------------------------------------------------------footer */
 .footer-wrap {
   display: flex;
@@ -985,7 +983,7 @@ padding-bottom: 2%;
 @media screen and (max-width:550px){
   .footer-wrap {
     display: block;
-    height: 38vh;
+    height: 42vh;
   }
   .footer-divs {
     width: 100%;

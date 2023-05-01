@@ -9,7 +9,7 @@
 }
 .project-1-img img {
     position: relative;
-    width: 30%;
+    width: 80%;
     overflow: hidden;
     margin-top: 6%;
 }
@@ -20,8 +20,14 @@
     position: relative;
 }
 .project-info{
-    margin-top: 10%;
-    width: 50%;
+    width: 85%;
+}
+.project-info h2 {
+    margin-left: 43%;
+    margin-top: 5%;
+}
+.project-info button {
+    margin-left: 5%;
 }
 .project-info h2, p{
     margin: 3%;
@@ -78,6 +84,15 @@
    .goal h2 {
     margin-left: 45%;
    }
+   @media screen and (max-width:550px) {
+    .strategy img {
+        width: 59%;
+        height: 55%;
+        overflow: hidden;
+        margin-left: 20%;
+    }
+   }
+   
    
 .num {
     border-radius: 20px;
