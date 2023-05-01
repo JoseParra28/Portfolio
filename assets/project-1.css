@@ -131,6 +131,7 @@
 .buttons {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 5%;
 }
 @media screen and (max-width:550px) {
     .wireframes h2 {
