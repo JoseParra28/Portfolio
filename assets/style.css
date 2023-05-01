@@ -1007,14 +1007,18 @@ padding-bottom: 2%;
   position: absolute;
   top: 41%;
   left: 27%;
-  width: 35%;
+  width: 40%;
   
 }
 .link-text h1 {
   margin-left: 29%;
+  font-size: 2.5rem;
+}
+.link-text h2 {
+font-size: 2rem;
 }
 .link-text p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin-left: 12%;
 }
 
