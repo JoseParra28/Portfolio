@@ -992,4 +992,29 @@ padding-bottom: 2%;
     font-size: 0.7rem;
   }
 }
+.img {
+  height: 100vh;
+  overflow: hidden;
+}
+.img img {
+  height: 55vh;
+  overflow: hidden;
+  position: relative;
+  left: 55%;
+  top: 20%;
+}
+.link-text {
+  position: absolute;
+  top: 41%;
+  left: 27%;
+  width: 35%;
+  
+}
+.link-text h1 {
+  margin-left: 29%;
+}
+.link-text p {
+  font-size: 0.7rem;
+  margin-left: 12%;
+}
 
